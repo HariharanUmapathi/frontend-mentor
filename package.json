@@ -1,0 +1,26 @@
+{
+  "name": "frontend-mentor-challenges",
+  "version": "1.0.0",
+  "description": "Qr Code Component ",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HariharanUmapathi/frontend-mentor.git"
+  },
+  "keywords": [
+    "frontend-mentor",
+    "html",
+    "css"
+  ],
+  "author": "Hariharan Umapathi",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/HariharanUmapathi/frontend-mentor/issues"
+  },
+  "homepage": "https://github.com/HariharanUmapathi/frontend-mentor#readme"
+}
