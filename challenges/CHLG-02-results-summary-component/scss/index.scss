@@ -1,0 +1,144 @@
+@use "fonts";
+@use "responsive";
+@use "gradients";
+
+$primary-color: #333;
+
+$font-stack: fonts.$font-stack;
+/*Light red */
+$card-1: hsl(0, 100%, 67%);
+/*Orangey yellow*/
+$card-4: hsl(39, 100%, 56%);
+/* Green teal*/
+$card-3: hsl(166, 100%, 37%);
+/*Cobalt blue*/
+$card-2: hsl(234, 85%, 45%);
+
+$bg-alpha: 0.15;
+$card-bg-1: hsla(0, 100%, 67%, $bg-alpha);
+/*Orangey yellow*/
+$card-bg-4: hsl(39, 100%, 56%, $bg-alpha);
+/* Green teal*/
+$card-bg-3: hsl(166, 100%, 37%, $bg-alpha);
+/*Cobalt blue*/
+$card-bg-2: hsl(234, 85%, 45%, $bg-alpha);
+
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+$font-size: 18px;
+
+$normal-font: 500;
+$bolder-font: 700;
+$boldest-font: 800;
+
+$box-shadow-color: #ebf1fd;
+$border-radius: 2rem;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.attribution {
+  display: inline;
+}
+.bold {
+  font-weight: bold;
+}
+main {
+  font: 100% $font-stack;
+  #card-a,
+  #card-b {
+    @media screen and (max-width: responsive.$mobile) {
+      width: calc(100% - 8rem);
+      border-radius: 0rem 0rem 1rem 1rem;
+    }
+  }
+  #card-a {
+    @media screen and (max-width: responsive.$mobile) {
+      width: calc(100% - 8rem);
+      border-radius: 0rem 0rem 2rem 2rem;
+      padding: 1rem;
+    }
+    .title,
+    .msg {
+      text-align: center;
+      color: $light-lavender;
+      margin-top: 1rem;
+    }
+    .msg {
+      padding: 10px;
+      width: 60%;
+      margin: auto;
+      font-size: 0.85rem;
+    }
+    .title.msg-title {
+      color: white;
+    }
+    color: white;
+    background: gradients.$gradient1;
+    .circle {
+      width: 30%;
+      height: 30%;
+      margin: auto;
+      background: gradients.$gradient2;
+      border-radius: 50%;
+    }
+  }
+  #card-b {
+    margin: 1rem;
+  }
+  .display {
+    padding: 0.5rem 0.25rem;
+    border-radius: 0.5rem;
+    margin: 0.75rem;
+    font-size: 0.84rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .score {
+      font-weight: bolder;
+      color: black;
+    }
+    .total-score {
+      color: hsl(0, 0%, 70%);
+    }
+    .topic {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 0.25rem;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &.red {
+      background-color: $card-bg-1;
+      color: $card-1;
+    }
+    &.yellow {
+      background-color: $card-bg-4;
+      color: $card-4;
+    }
+    &.green {
+      background-color: $card-bg-3;
+      color: $card-3;
+    }
+    &.blue {
+      background-color: $card-bg-2;
+      color: $card-2;
+    }
+  }
+  .btn {
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    &.btn-secondary {
+      background: hsl(224, 30%, 27%);
+      color: white;
+    }
+  }
+}

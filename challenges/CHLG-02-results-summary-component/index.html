@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/index.css" />
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="card-a">
+      <div class="title">Your Result</div>
+      <div class="circle">
+        <div class="cumulative-score">76</div>
+        <span class="total-score">of 100</span>
+      </div>
+
+      <div class="title msg-title">Great</div>
+      <div class="msg"> You scored higher than 65% of the people who have taken these tests.</div>
+    </div>
+    <div id="card-b">
+      <div class="breakdown-title title bold"> Summary</div>
+      <div class="display red">
+        <span class="topic"><img src="./assets/images/icon-reaction.svg" alt="Reaction Icon" />Reaction</span>
+
+        <span class="score">
+          <span class="scored">80</span>
+          <span class="total-score">/100</span>
+        </span>
+      </div>
+      <div class="display yellow">
+        <span class="topic">
+          <img src="./assets/images/icon-memory.svg" alt="Memory Icon" />Memory</span>
+
+        <span class="score">
+          <span class="scored">92</span>
+          <span class="total-score">/100</span>
+        </span>
+      </div>
+      <div class="display green">
+        <span class="topic">
+          <img src="./assets/images/icon-verbal.svg" alt />Verbal</span>
+
+        <span class="score">
+          <span class="scored">61</span>
+          <span class="total-score">/100</span>
+        </span>
+      </div>
+      <div class="display blue">
+        <span class="topic"><img src="./assets/images/icon-visual.svg" alt />Visual</span>
+
+        <span class="score">
+          <span class="scored">72</span>
+          <span class="total-score">/100</span>
+        </span>
+      </div>
+      <div class="btn btn-secondary">Continue</div>
+    </div>
+
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hariharan Umapathi</a>.
+  </div>
+</body>
+
+</html>

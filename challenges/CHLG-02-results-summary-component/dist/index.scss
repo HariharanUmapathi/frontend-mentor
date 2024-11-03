@@ -1,0 +1,125 @@
+/*Required Widths*/
+/*Light red */
+/*Orangey yellow*/
+/* Green teal*/
+/*Cobalt blue*/
+/*Orangey yellow*/
+/* Green teal*/
+/*Cobalt blue*/
+/*
+
+
+ Light slate blue (background):
+ Light royal blue (background): 
+ */
+/*
+
+Violet blue (circle):
+Persian blue (circle):
+*/
+body {
+  font: 100% Hanken Grotesk, sans-serif;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  box-shadow: 15px 22px 40px #ebf1fd;
+  border-radius: 2rem;
+  max-width: 375px;
+  min-width: 100px;
+}
+main #card-a,
+main #card-b {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+main #card-a .display,
+main #card-b .display {
+  padding: 1.02rem;
+  border-radius: 1.2rem;
+  margin: 0.5rem 1rem;
+}
+main #card-a {
+  background: linear-gradient(180, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.display {
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.display .scored {
+  font-weight: 700;
+}
+.display .total-score {
+  font-weight: 500;
+  color: gray;
+}
+.display.red {
+  background-color: hsla(0, 100%, 67%, 0.05);
+  color: hsl(0, 100%, 67%);
+}
+.display.blue {
+  background-color: hsla(234, 85%, 45%, 0.05);
+  color: hsl(234, 85%, 45%);
+}
+.display.green {
+  background-color: hsla(166, 100%, 37%, 0.05);
+  color: hsl(166, 100%, 37%);
+}
+.display.yellow {
+  background-color: hsla(39, 100%, 56%, 0.05);
+  color: hsl(39, 100%, 56%);
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.btn.btn-secondary {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  text-align: center;
+}
+
+.title {
+  font-weight: 800;
+  font-family: 100% Hanken Grotesk, sans-serif;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #333;
+  max-width: 375px;
+  max-height: 375px;
+}
+
+main #card-a {
+  background: linear-gradient(180, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 375px) {
+  main {
+    max-width: 100%;
+    flex-direction: row;
+  }
+}
+@media (min-width > 375px) and (max-width: 375px) {
+  main {
+    max-width: 400px;
+    width: 375px;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=index.scss.map */
